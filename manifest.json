@@ -1,0 +1,25 @@
+{
+  "manifest_version": 3,
+
+  "name": "Keyword Search",
+  "version": "1.0",
+  "description": "Search a page for multiple pre-selected words at once.",
+
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["./content/content.js"]
+    }
+  ],
+  "action": {
+    "default_popup": "./popup/popup.html"
+  },
+  "permissions": [
+    "activeTab",
+    "storage",
+    "scripting"
+  ]
+}

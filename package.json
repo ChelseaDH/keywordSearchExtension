@@ -1,0 +1,9 @@
+{
+  "devDependencies": {
+    "@types/chrome": "^0.0.141",
+    "typescript": "^4.2.4"
+  },
+  "scripts": {
+    "compile-typescript": "tsc"
+  }
+}
